@@ -23,10 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!5+1ha0$2&q9v4#ygfswd^9+s!d(l4(2cz06)5%4+^vlhlt&(8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['.vercel.app', '.zype.cf', 'zubuntu.cf']
 
 # Application definition
 
