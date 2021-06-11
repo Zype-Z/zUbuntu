@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!5+1ha0$2&q9v4#ygfswd^9+s!d(l4(2cz06)5%4+^vlhlt&(8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.zubuntu.cf', 'blog.zubuntu.cf', 'zubuntu.zype.cf']
+ALLOWED_HOSTS = []
 
 
 # Application definition
