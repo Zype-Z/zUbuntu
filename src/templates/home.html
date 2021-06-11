@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block tab_content %} 
+    Home 
+{% endblock %}
+
+{% block page_content %}
+    {% for object in object_list %}
+        <div class="container">
+            <div class="mt-3">    
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="{{object.slug}}">{{object.title}}</a></h5>
+                        <p class="card-text">{{object.subtitle}}</p>
+                        <p class="card-text"><small class="text-muted">Published: {{object.created_at}}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <p>Sorry, no articles have been written yet.</p>
+    {% endfor %}
+{% endblock %}
