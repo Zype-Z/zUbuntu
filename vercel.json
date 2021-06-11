@@ -7,7 +7,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "src/zUbuntu/wsgi.py"
+            "dest": "zUbuntu/wsgi.py"
         }
     ]
 }
